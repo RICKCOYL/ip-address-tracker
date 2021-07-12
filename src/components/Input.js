@@ -7,7 +7,7 @@ const Input = ({ handleChange, state }) => {
             <form>
                 <h1>IP Address Tracker</h1>
                 <div id='input-div'>
-                    <input type="text" onChange={handleChange} value={state} />
+                    <input type="text" onChange={handleChange} value={state.input} />
                     <button id="arrow" type="submit">
                         <img src={arrow} alt="search" />
                     </button>

@@ -4,23 +4,32 @@ import Location from "./components/Location";
 import Maps from "./components/Map";
 
 function App() {
-  const API_KEY = '56cfc049a8cadc9d416670d53129392d';
+  //const GEO_LOCATION_KEY = 'at_hywNLV5Bha0BV38xvnvsaKCuzVLlU';
+  //const GEO_LOCATION_URL = 'https://geo.ipify.org/api/v1?apiKey=';
   const [state, setstate] = useState('134.201.250.155');
-  const [location, setlocation] = useState([]);
+  const [location, setlocation] = useState({
+    loading: true,
+    state: []
+  });
+
+  console.log(location);
 
   const handleChange = (e) => {
     setstate(e.target.value);
   };
 
   useEffect(() => {
-    fetch(`http://api.ipapi.com/${state}?access_key=${API_KEY}`, {
+    fetch('https://geo.ipify.org/api/v1?apiKey=at_hywNLV5Bha0BV38xvnvsaKCuzVLlU', {
       method: 'GET',
       headers: {}
     })
       .then(res => res.json())
       .then(json => {
         console.log(json);
-        return setlocation(json);
+        return setlocation({
+          loading: false,
+          state: json
+        });
       });
   }, [state]);
 

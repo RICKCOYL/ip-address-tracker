@@ -63,7 +63,6 @@ right: 0;
 top: 150px;
 width: 63%;
 margin: 0 auto;
-
 }
 
 #location p {
@@ -82,6 +81,16 @@ h5 {
   margin: 10px 0;
   font-size: 18px;
 
+}
+#loader-div {
+  position: relative;
+}
+#loader {
+  width: 70px;
+ position: absolute;
+ left: 50%;
+ display: inline-block;
+ background-color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -104,5 +113,15 @@ h5 {
   #location div:not(:last-child){
     padding-right: 25px;
     border-right: 1px #d3d3d3 groove;
+  }
+
+  #flag {
+    width: 50px;
+  }
+
+  #loader-div {
+    width: 60%;
+    height: 60%;
+    margin: auto;
   }
 }
