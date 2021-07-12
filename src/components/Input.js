@@ -1,17 +1,19 @@
 import React from 'react';
 import arrow from '../assests/images/icon-arrow.svg';
 
-const Input = () => {
+const Input = ({ handleChange, state }) => {
     return (
         <div id='background-img'>
-            <div>
+            <form>
                 <h1>IP Address Tracker</h1>
                 <div id='input-div'>
-                    <input type="text" />
-                    <img id="arrow" src={arrow} alt="search" />
+                    <input type="text" onChange={handleChange} value={state} />
+                    <button id="arrow" type="submit">
+                        <img src={arrow} alt="search" />
+                    </button>
                 </div>
 
-            </div>
+            </form>
         </div>
     );
 };

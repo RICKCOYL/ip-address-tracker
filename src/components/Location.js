@@ -1,23 +1,23 @@
 import React from 'react';
 
-const Location = () => {
+const Location = ({ location }) => {
     return (
         <div id='location'>
             <div>
                 <h5>IP ADDRESS</h5>
-                <p>199.45.43</p>
+                <p>{location.ip}</p>
             </div>
             <div>
                 <h5>LOCATION</h5>
-                <p>199.45.43</p>
+                <p>{location.city}</p>
             </div>
             <div>
-                <h5>TIMEZONE</h5>
-                <p>199.45.43</p>
+                <h5>FLAG</h5>
+                <p><img src={location.country_flag} alt="" /></p>
             </div>
             <div>
-                <h5>ISP</h5>
-                <p>199.45.43</p>
+                <h5>CONTINENT</h5>
+                <p>{location.continent_name}</p>
             </div>
         </div>
     );

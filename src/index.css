@@ -41,6 +41,7 @@ width: 245px;
   background-color: #000;
   padding: 17px;
   border-radius: 0 10px 10px 0;
+  border: none;
 }
 
 input:focus{
