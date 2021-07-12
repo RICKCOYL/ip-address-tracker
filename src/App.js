@@ -1,13 +1,13 @@
 import Input from "./components/Input";
 import Location from "./components/Location";
-import Map from "./components/Map";
+import Maps from "./components/Map";
 
 function App() {
   return (
     <div className="App">
       <Input />
       <Location />
-      <Map />
+      <Maps />
     </div>
   );
 }

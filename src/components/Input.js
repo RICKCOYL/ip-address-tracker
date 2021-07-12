@@ -10,6 +10,7 @@ const Input = () => {
                     <input type="text" />
                     <img id="arrow" src={arrow} alt="search" />
                 </div>
+
             </div>
         </div>
     );
