@@ -90,7 +90,7 @@ h5 {
  position: absolute;
  left: 50%;
  display: inline-block;
- background-color: #fff;
+ /*background-color: #fff;*/
 }
 
 @media only screen and (min-width: 768px) {
